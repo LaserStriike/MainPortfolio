@@ -1,0 +1,40 @@
+/* 1600/16 = 87.5 */
+@media (max-width: 100em) {
+}
+
+/* 1400/16 = 87.5 */
+@media (max-width: 88em) {
+}
+
+/* 1230/16 = 76.875 */
+@media (max-width: 76.875em) {
+}
+
+/* 1025/16 = 64.0625 */
+
+@media (max-width: 64.0625em) {
+}
+
+/* 1080/16 = 67.5 */
+@media (max-width: 68em) {
+}
+
+/* 925/16 = 57.8125 */
+@media (max-width: 57em) {
+}
+
+/* 860/16 = 53.75 */
+@media (max-width: 54em) {
+}
+/* 760/16 = 47.5 */
+@media (max-width: 47em) {
+}
+
+/* 750/16 = 46.875 */
+@media (max-width: 47em) {
+}
+
+/* 540/16 = 33.125 */
+
+@media (max-width: 34em) {
+}
