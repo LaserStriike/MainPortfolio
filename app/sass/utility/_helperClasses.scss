@@ -1,0 +1,37 @@
+.grid-display {
+  display: grid;
+}
+
+.flex-display {
+  display: flex;
+}
+
+.inline-display {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Classes I used to hide menus when changing viewport width using Media Queries */
+.mobile-hidden {
+  display: none;
+}
+
+.mobile-flex-display {
+  display: flex;
+}
+.mobile-flow-remove {
+  position: absolute;
+}
+
+/* /////////////////// */
+
+.flow-remove {
+  position: absolute;
+}
+
+.flow-add {
+  position: relative;
+}
