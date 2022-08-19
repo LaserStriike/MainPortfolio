@@ -1,0 +1,18 @@
+@use "../utility" as util;
+
+.nav {
+  background-color: #000;
+  color: blue;
+  &__home-link {
+    background-color: orange;
+  }
+  &__sub-links {
+    background-color: purple;
+  }
+  &__link {
+    background-color: pink;
+  }
+  @include util.breakpoint(tablets) {
+    background-color: pink;
+  }
+}
