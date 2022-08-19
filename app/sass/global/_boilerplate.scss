@@ -8,6 +8,8 @@ SPACING SYSTEM (px)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 *:focus {
@@ -20,15 +22,22 @@ html {
   /* overflow-x: hidden; */
 }
 
+body {
+  background-color: #000;
+}
 .container {
   max-width: 140rem;
   margin: 0 auto;
-  margin-right: 6.8rem;
-  margin-left: 6.8rem;
+  // margin-right: 6.8rem;
+  // margin-left: 6.8rem;
   /* padding-left: 6.4rem;
     padding-right: 6.4rem; */
 }
 
+.btn {
+  padding: 1rem 1rem;
+  font-size: 3rem;
+}
 .button-container {
   display: flex;
   gap: 2rem;

@@ -1,13 +1,20 @@
-@use "../utility" as util;
+@use "../utility/_functions.scss" as util;
 
 .nav {
-  background-color: #000;
+  display: flex;
+  justify-content: space-between;
   color: blue;
+
+  padding: 2rem 0;
+
+  font-size: 1.4rem;
   &__home-link {
-    background-color: orange;
+    background-color: pink;
+
+    padding-left: 1.8rem;
   }
   &__sub-links {
-    background-color: purple;
+    padding-right: 1.8rem;
   }
   &__link {
     background-color: pink;
