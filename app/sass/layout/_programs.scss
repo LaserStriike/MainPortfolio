@@ -1,3 +1,40 @@
 .programs {
-  color: #ccc;
+  color: #eee;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+    margin-bottom: 4.8rem;
+  }
+
+  h2 {
+    font-size: 7.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  #wwc img {
+    background-color: #eee;
+    width: 7rem;
+  }
+}
+
+.tools {
+  font-size: 2.4rem;
+
+  ul {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  li {
+    display: inline-block;
+  }
+}
+.musicTools {
+  overflow-x: scroll;
+  font-size: 4.4rem;
 }
