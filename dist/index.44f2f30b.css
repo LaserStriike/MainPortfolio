@@ -158,6 +158,14 @@ body {
   filter: brightness(50%);
 }
 
+.background-image {
+  z-index: -1;
+  filter: brightness(25%);
+  position: absolute;
+  right: -70%;
+  overflow: hidden;
+}
+
 .info {
   color: #ccc;
   grid-template-columns: repeat(7, 1fr);

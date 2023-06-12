@@ -5,15 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script defer src="app/js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
-    /> -->
+    />
     <link rel="stylesheet" href="dist/style.css" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .header {
+        background-color: #f1f1f1;
+        padding: 30px;
+        text-align: center;
+      }
+
+      #navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    </style>
   </head>
-  <body>
-    <nav class="nav container">
+  <body onscroll="myFunction()">
+    <div id="navbar">
+      <a class="active" href="javascript:void(0)">Home</a>
+      <a href="javascript:void(0)">News</a>
+      <a href="javascript:void(0)">Contact</a>
+    </div>
+    <nav id="navbar" class="nav container">
       <div>
         <a class="nav__home-link" href="#">home link</a>
       </div>
@@ -41,59 +99,65 @@
           <img class="hero__img" src="img/toast.png" />
         </div>
       </section>
-      <section class="info container">
-        <h1 class="info__header">Hello, my name is Joshua Washington</h1>
+      <div class="info-container">
+        <img
+          class="background-image"
+          src="img/Foundation_Album_Cover_Big.png"
+        />
+        <section class="info">
+          <h1 class="info__header">Hello, my name is Joshua Washington</h1>
 
-        <aside class="school">
-          <h2 class="school__header">School History</h2>
-          <ul>
-            <li>
-              <h3 class="school__sub-header">Western Governors University</h3>
-              <p class="school__text">
-                Bachelors in Cybersecurity and Information Assurance
-              </p>
-            </li>
-            <li>
-              <h3 class="school__sub-header">Nova Southeastern University</h3>
-              <p class="school__text">Bachelors in Computer Science</p>
-            </li>
-          </ul>
-        </aside>
-        <div class="info__text">
-          <p>
-            I am 20 years old and currently developing my own online-multiplayer
-            2D fighting game (Project MAX). I began my software development
-            journey back when I was 17. I started with C++, then kept bouncing
-            around for three years- Lua, SQL, Python, and currently JavaScript
-            (REACT) right now. Only recently I figured out what my roadmap is
-            going to be and I've been pursuing Web Application development,
-            consistently, ever since. Click here if you would like to know my
-            entire journey in depth (it'll probably take 5 minutes to read
-            this).
-          </p>
-        </div>
-        <aside class="work">
-          <h2 class="work__header">Work Experience</h2>
-          <ul class="work__list">
-            <li>
-              <h3 class="work__sub-header">Full-Stack Web Developer</h3>
-              <p class="work__text">
-                I am currently working on a multiplayer 2D fighting game (July
-                1st - present)
-              </p>
-            </li>
-            <li>
-              <h3 class="work__sub-header">
-                Freelance Front-End Web Developer
-              </h3>
-              <p class="work__text">
-                I fulfill requests from clients I recieve either in person or
-                online. (2021 - present)
-              </p>
-            </li>
-          </ul>
-        </aside>
-      </section>
+          <aside class="school">
+            <h2 class="school__header">School History</h2>
+            <ul>
+              <li>
+                <h3 class="school__sub-header">Western Governors University</h3>
+                <p class="school__text">
+                  Bachelors in Cybersecurity and Information Assurance
+                </p>
+              </li>
+              <li>
+                <h3 class="school__sub-header">Nova Southeastern University</h3>
+                <p class="school__text">Bachelors in Computer Science</p>
+              </li>
+            </ul>
+          </aside>
+          <div class="info__text">
+            <p>
+              I am 20 years old and currently major in Computer Science at WGU.
+              I began my software development journey back when I was 17. I
+              started with C++, then kept bouncing around for three years- Lua,
+              SQL, Python, and currently JavaScript (REACT) right now. Recently
+              I figured out what my roadmap is going to be and I've been
+              pursuing Web Development, consistently, ever since. This is my
+              portfolio. I'm also a Music Producer; you can check out my music
+              here.
+            </p>
+          </div>
+          <aside class="work">
+            <h2 class="work__header">Work Experience</h2>
+            <ul class="work__list">
+              <li>
+                <h3 class="work__sub-header">Full-Stack Web Developer</h3>
+                <p class="work__text">
+                  I am currently working on a multiplayer 2D fighting game (July
+                  1st - present)
+                </p>
+              </li>
+              <li>
+                <h3 class="work__sub-header">
+                  Freelance Front-End Web Developer
+                </h3>
+                <p class="work__text">
+                  I fulfill requests from clients I recieve either in person or
+                  online. (2021 - present)
+                </p>
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+
       <section class="programs container">
         <div class="programs__header">
           <h1>Programs/Resources I use</h1>
@@ -389,5 +453,18 @@
         &copy; 2022 - <span>Wave</span> All Rights Reserved
       </p>
     </main>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      const sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
